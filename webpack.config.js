@@ -5,8 +5,9 @@ export default {
   entry: './src/home.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(import.meta.dirname, 'dist'),
-    clean : true
+    path: path.resolve(import.meta.dirname, 'docs'),
+    clean : true,
+    publicPath: ""
   },
   devtool: "eval-source-map",
   devServer: {
